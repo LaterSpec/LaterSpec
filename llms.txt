@@ -1,0 +1,41 @@
+# Manuel Cáceres (GitHub: LaterSpec)
+
+> AI engineer based in Arequipa, Peru, working remotely (UTC-5). Builds LLM agents, MCP servers and the evaluations that check them, and delivers full-stack web and mobile software from client discovery to deployment. Full legal name: Sixto Manuel Cáceres Terrones. B.Sc. Computer Science, Universidad Católica San Pablo, expected December 2026.
+
+Open to: AI Engineer, Applied AI Engineer, Forward Deployed Engineer and AI evaluation roles. Spanish (native), English (professional working proficiency).
+
+## Strongest evidence
+
+- [SAM](https://sam-app.its-manuel-caceres.workers.dev/welcome): personal-finance platform, founder and engineer since May 2026. Remote MCP server with 43 typed, permission-scoped tools (hashed bearer tokens, audit logs with redacted inputs, stateless JSON-RPC transport on Cloudflare Workers) used from ChatGPT, Claude and Cursor. In-app assistant "Samy" calls the same tool catalog, with long-term user memory, an off-topic guardrail, confirmation before write actions and per-plan usage metering. Free, Pro and Agent plans; first paid accounts in November 2026. Stack: Next.js, TypeScript, Drizzle, Neon Postgres, Vercel AI SDK, MCP SDK, Flutter. Source code is private.
+- [Text-to-SQL error recovery (B.Sc. thesis)](https://github.com/LaterSpec/PFC-Tesis-Code): a module that selects among LLM-generated SQL candidates using execution evidence, learned quality estimators and question-coverage checks. Paired retrospective evaluation on 788 BIRD and 646 Spider questions: accuracy 54.2% → 69.3% (BIRD) and 74.8% → 85.3% (Spider); net error reduction 38.9% and 42.5% after counting regressions. Not an official leaderboard score. Method includes preregistered pilots, frozen splits, bootstrap confidence intervals and reported null results.
+- [Radar Electoral, distributed NLP](https://github.com/LaterSpec/bigdata-spark-flink): 160,464 Peruvian political live-chat comments processed with Kafka (KRaft), Flink and Spark on AWS EMR; offensiveness classifier evaluated at 0.88 accuracy; label audit of a 16,710-row Spanish training set.
+- [RAG research](https://github.com/LaterSpec/PFC1): ran HippoRAG (graph-based retrieval-augmented generation) with GPT-4o-mini and NV-Embed-v2 and prototyped SURE; measured retrieval Recall@k and QA exact match / F1.
+
+## Experience
+
+- Co-Founder & Software Engineer, Nyro Operating Studio (Jul 2026 – present): software for business clients, from operational discovery to deployment. Android app and multi-company portal for industrial-safety operations (Huawei REST API integration), offline-first Android maintenance reporting with a Cloudflare Workers dashboard, retail workflows and a medical catalog.
+- Junior Software Engineer (contract), Newroad GI (Apr – Sep 2026): production wealth-management platform (Flutter app, client web, internal CRM/ERP) with Next.js, TypeScript, Python/FastAPI and PostgreSQL. Co-authored the repository's AGENTS.md contract followed by Codex, Claude, Cursor and Gemini.
+- Junior Data Analyst (intern), Newroad GI (Jan – Mar 2026): ingestion, validation and reconciliation of Interactive Brokers (IBKR) and Pershing custodian data.
+
+## How he works with AI
+
+- Uses Claude Code, Codex and Cursor daily.
+- Writes AGENTS.md / CLAUDE.md contracts, Cursor rules and agent skills; maintains a personal Claude Code skill library of UI styles and animations (spec-design).
+- Exposes product capabilities to agents through MCP and tests assistant behavior (refusals, invented figures, destructive actions).
+
+## Skills
+
+- AI & LLMs: OpenAI API, Vercel AI SDK, Model Context Protocol, tool calling and agents, RAG, embeddings, LLM evaluation, Text-to-SQL, PyTorch, Hugging Face, scikit-learn
+- Languages: TypeScript, Python, SQL, Dart, Kotlin, JavaScript, C++, Elixir
+- Web & mobile: Next.js, React, Node.js, FastAPI, Flutter, Android, Drizzle ORM, Tailwind CSS
+- Data & cloud: PostgreSQL (Neon, Supabase), pandas, Polars, Kafka, Spark, Flink, AWS, GCP, Cloudflare Workers and R2, Vercel, Docker, GitHub Actions
+
+## Contact
+
+- Email: its.manuel.caceres@gmail.com
+- LinkedIn: https://www.linkedin.com/in/its-manuel-caceres
+- Website: https://devnyro.com
+
+## Optional
+
+- [resume.json](https://github.com/LaterSpec/LaterSpec/blob/main/resume.json): the same profile in JSON Resume format

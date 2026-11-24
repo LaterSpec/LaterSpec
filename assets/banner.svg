@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
+  <title id="t">Manuel Cáceres — AI Engineer</title>
+  <desc id="d">Terminal-style banner: Manuel Cáceres, AI Engineer building LLM agents, MCP servers and evals. A diagram shows an LLM agent connected to tools through MCP.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    .p2 { animation-delay: .4s } .p3 { animation-delay: .8s } .p4 { animation-delay: 1.2s } .p5 { animation-delay: 1.6s }
+    .flow { stroke-dasharray: 4 8; animation: flow 1.6s linear infinite; }
+    @keyframes blink { 50% { opacity: 0 } }
+    @keyframes pulse { 0%, 100% { opacity: .55 } 50% { opacity: 1 } }
+    @keyframes flow { to { stroke-dashoffset: -24 } }
+  </style>
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#30363d"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset=".55" stop-color="#0d1117" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="328" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <rect x="2" y="44" width="1196" height="284" fill="url(#dots)"/>
+  <rect x="2" y="44" width="760" height="284" fill="url(#fade)"/>
+
+  <!-- window chrome -->
+  <path d="M1 44h1198" stroke="#30363d" stroke-width="2"/>
+  <circle cx="28" cy="23" r="7" fill="#ff5f57"/><circle cx="52" cy="23" r="7" fill="#febc2e"/><circle cx="76" cy="23" r="7" fill="#28c840"/>
+  <text x="600" y="28" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">~/laterspec — zsh</text>
+
+  <!-- terminal -->
+  <g class="mono" font-size="19">
+    <text x="40" y="90" class="line l1"><tspan fill="#7ee787">~/laterspec</tspan><tspan fill="#c9d1d9"> $ whoami</tspan></text>
+  </g>
+  <text x="40" y="146" class="sans line l2" font-size="46" font-weight="700" fill="#f0f6fc">Manuel Cáceres</text>
+  <text x="40" y="184" class="mono line l3" font-size="21" fill="#79c0ff">AI Engineer · LLM agents, MCP &amp; evals</text>
+  <g class="mono" font-size="17">
+    <text x="40" y="236" class="line l4"><tspan fill="#7ee787">~/laterspec</tspan><tspan fill="#c9d1d9"> $ cat now.txt</tspan></text>
+    <text x="40" y="266" class="line l5" fill="#8b949e">Shipping MCP servers, tool-calling assistants and the evals that keep them honest.</text>
+    <text x="40" y="296" class="line l5" fill="#8b949e">Arequipa, Peru · remote<tspan class="cursor" fill="#c9d1d9"> ▌</tspan></text>
+  </g>
+
+  <!-- agent ↔ MCP ↔ tools diagram -->
+  <g class="mono" font-size="13" text-anchor="middle">
+    <g stroke="#388bfd" stroke-width="2" fill="none">
+      <path class="flow" d="M905 188 L1010 110"/>
+      <path class="flow" d="M905 188 L1040 168"/>
+      <path class="flow" d="M905 188 L1040 226"/>
+      <path class="flow" d="M905 188 L1010 284"/>
+      <path class="flow" d="M842 188 L905 188"/>
+    </g>
+    <rect x="740" y="166" width="102" height="44" rx="10" fill="#161b22" stroke="#d97757" stroke-width="2"/>
+    <text x="791" y="193" fill="#f0f6fc">LLM agent</text>
+    <circle cx="905" cy="188" r="30" fill="#161b22" stroke="#79c0ff" stroke-width="2" class="pulse"/>
+    <text x="905" y="193" fill="#79c0ff">MCP</text>
+    <g fill="#161b22" stroke="#30363d" stroke-width="2">
+      <rect x="1010" y="92" width="150" height="36" rx="8" class="pulse p2"/>
+      <rect x="1040" y="150" width="130" height="36" rx="8" class="pulse p3"/>
+      <rect x="1040" y="208" width="130" height="36" rx="8" class="pulse p4"/>
+      <rect x="1010" y="266" width="150" height="36" rx="8" class="pulse p5"/>
+    </g>
+    <g fill="#c9d1d9">
+      <text x="1085" y="115">get_spending()</text>
+      <text x="1105" y="173">add_expense()</text>
+      <text x="1105" y="231">run_eval()</text>
+      <text x="1085" y="289">text_to_sql()</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Sixto Manuel Cáceres Terrones",
+    "label": "AI Engineer — LLM agents, MCP and evals",
+    "email": "its.manuel.caceres@gmail.com",
+    "url": "https://devnyro.com",
+    "summary": "AI engineer who puts LLM agents into production and measures whether they work. Built SAM's MCP server (43 permission-scoped tools used from ChatGPT, Claude and Cursor) and its tool-calling assistant, now on paid plans. Thesis on LLM Text-to-SQL raised accuracy from 54% to 69% on BIRD and from 75% to 85% on Spider. Ships end to end, from client discovery to deployed web and mobile apps.",
+    "location": { "city": "Arequipa", "countryCode": "PE" },
+    "profiles": [
+      { "network": "GitHub", "username": "LaterSpec", "url": "https://github.com/LaterSpec" },
+      { "network": "LinkedIn", "username": "its-manuel-caceres", "url": "https://www.linkedin.com/in/its-manuel-caceres" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Nyro Operating Studio",
+      "position": "Co-Founder & Software Engineer",
+      "url": "https://devnyro.com",
+      "startDate": "2026-07",
+      "summary": "Software for business clients, from operational discovery and architecture to deployment and support.",
+      "highlights": [
+        "Android app and multi-company web portal for industrial-safety operations, integrating Huawei REST API data with company reports and certificates.",
+        "Offline-first Android maintenance-reporting app that syncs on reconnect, with a Cloudflare Workers dashboard and private R2 photo storage.",
+        "Retail workflows for sales, cash, inventory, expenses and payment reconciliation; searchable medical catalog for a healthcare business."
+      ]
+    },
+    {
+      "name": "SAM",
+      "position": "Founder & Engineer",
+      "url": "https://sam-app.its-manuel-caceres.workers.dev/welcome",
+      "startDate": "2026-05",
+      "summary": "AI-native personal finance platform (web, PWA and Android).",
+      "highlights": [
+        "Remote MCP server with 43 typed tools: per-user scopes, hashed bearer tokens, audit logs with redacted inputs and a stateless JSON-RPC transport for Cloudflare Workers; works with ChatGPT, Claude and Cursor.",
+        "In-app assistant (Samy) on the same tool catalog, with long-term user memory, an off-topic guardrail, confirmation before writes and per-plan usage metering.",
+        "Free, Pro and Agent plans with server-enforced quotas on AI messages and MCP calls; first paid accounts in November 2026."
+      ]
+    },
+    {
+      "name": "Newroad GI",
+      "position": "Junior Software Engineer (Contract)",
+      "location": "Arequipa, Peru",
+      "startDate": "2026-04",
+      "endDate": "2026-09",
+      "highlights": [
+        "Production wealth-management platform (Flutter app, client web, internal CRM/ERP) with Next.js, TypeScript, Python/FastAPI and PostgreSQL, deployed on Vercel and Cloudflare.",
+        "Co-authored the repository's AGENTS.md operating contract and AI context docs followed by Codex, Claude, Cursor and Gemini in a 2,000+ commit team codebase.",
+        "CRM onboarding, KYC forms, role-based mobile access, portfolio exports, NAV logic and StoneX transaction mapping."
+      ]
+    },
+    {
+      "name": "Newroad GI",
+      "position": "Junior Data Analyst (Internship)",
+      "location": "Arequipa, Peru",
+      "startDate": "2026-01",
+      "endDate": "2026-03",
+      "highlights": [
+        "Ingested, transformed, validated and reconciled Interactive Brokers (IBKR) and Pershing custodian datasets for operations and reporting."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Católica San Pablo",
+      "area": "Computer Science",
+      "studyType": "B.Sc.",
+      "endDate": "2026-12",
+      "courses": ["Thesis: selective error recovery for LLM-generated Text-to-SQL"]
+    }
+  ],
+  "certificates": [
+    { "name": "AWS Academy Cloud Foundations", "date": "2025", "issuer": "Amazon Web Services" }
+  ],
+  "projects": [
+    {
+      "name": "Text-to-SQL error recovery with LLMs (B.Sc. thesis)",
+      "url": "https://github.com/LaterSpec/PFC-Tesis-Code",
+      "highlights": [
+        "Selects among LLM-generated SQL candidates using execution evidence, learned quality estimators and question-coverage checks.",
+        "Paired retrospective evaluation on 788 BIRD and 646 Spider questions: accuracy 54.2% to 69.3% (BIRD) and 74.8% to 85.3% (Spider); net error reduction 38.9% and 42.5% after counting regressions. Not an official leaderboard score.",
+        "Preregistered pilots with frozen splits, bootstrap confidence intervals and hashed provenance; null results reported."
+      ],
+      "keywords": ["LLM evaluation", "Text-to-SQL", "BIRD", "Spider", "Python", "scikit-learn"]
+    },
+    {
+      "name": "Radar Electoral: distributed NLP pipeline",
+      "url": "https://github.com/LaterSpec/bigdata-spark-flink",
+      "highlights": [
+        "160,464 Peruvian political live-chat comments processed with Kafka (KRaft), Flink and Spark on AWS EMR.",
+        "Offensiveness classifier evaluated at 0.88 accuracy; label audit of a 16,710-row Spanish training set."
+      ],
+      "keywords": ["NLP", "Kafka", "Flink", "Spark", "AWS"]
+    },
+    {
+      "name": "RAG research",
+      "url": "https://github.com/LaterSpec/PFC1",
+      "highlights": [
+        "Ran HippoRAG (graph-based retrieval) with GPT-4o-mini and NV-Embed-v2 and prototyped SURE; measured Recall@k and QA exact match / F1."
+      ],
+      "keywords": ["RAG", "embeddings", "OpenAI API"]
+    }
+  ],
+  "skills": [
+    { "name": "AI & LLMs", "keywords": ["OpenAI API", "Vercel AI SDK", "Model Context Protocol", "tool calling", "agents", "RAG", "embeddings", "LLM evaluation", "Text-to-SQL", "PyTorch", "Hugging Face", "scikit-learn"] },
+    { "name": "AI-assisted engineering", "keywords": ["Claude Code", "Codex", "Cursor", "AGENTS.md", "agent skills"] },
+    { "name": "Languages", "keywords": ["TypeScript", "Python", "SQL", "Dart", "Kotlin", "JavaScript", "C++", "Elixir"] },
+    { "name": "Web & mobile", "keywords": ["Next.js", "React", "Node.js", "FastAPI", "Flutter", "Android", "Drizzle ORM", "Tailwind CSS"] },
+    { "name": "Data & cloud", "keywords": ["PostgreSQL", "Neon", "Supabase", "pandas", "Polars", "Kafka", "Spark", "Flink", "AWS", "GCP", "Cloudflare Workers", "Vercel", "Docker", "GitHub Actions"] }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native speaker" },
+    { "language": "English", "fluency": "Professional working proficiency" }
+  ]
+}
